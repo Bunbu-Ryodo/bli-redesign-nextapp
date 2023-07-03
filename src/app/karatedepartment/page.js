@@ -6,7 +6,7 @@ export default function KarateDepartment() {
       <div className="flex-row">
         <Navbar></Navbar>
         <section id="karatedepartment">
-            <h1>Karate Department Goes Here</h1>
+            <h1>Karate Department Goes Ha</h1>
         </section>
       </div>
     </main>
