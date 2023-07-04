@@ -16,6 +16,9 @@ module.exports = {
         blitzYellow: '#E4B777',
         blitzBlack: '#001011',
         blitzBlue: '#20A4F3'
+      },
+      lineHeight: {
+        '12': '3rem',
       }
     },
   },
