@@ -1,12 +1,8 @@
 
 import Image from 'next/image';
-import karate from './karate.png';
 import karateHover from './karate_hover.png';
-import judo from './judo.png';
 import judoHover from './judo_hover.png';
-import bjj from './bjj.png';
 import bjjHover from './bjj_hover.png';
-import kickboxing from './kickboxing.png';
 import kickboxingHover from './kickboxing_hover.png';
 
 import { Dosis } from 'next/font/google';

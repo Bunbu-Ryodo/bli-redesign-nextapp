@@ -1,8 +1,5 @@
-import { Bebas_Neue } from 'next/font/google';
-import { Dosis } from 'next/font/google';
-
-const bebasNeue = Bebas_Neue({ subsets: ['latin'], weight: ['400'] });
-const dosisSemibold = Dosis({subsets: ['latin'], weight: ['600']});
+import { bebasNeue } from '../../fonts.js';
+import { dosisSemibold } from '../../fonts.js';
 
 
 
