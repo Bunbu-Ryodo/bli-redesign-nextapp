@@ -7,7 +7,7 @@ function Navbar(){
     return(
         <nav className="relative container mx-auto bg-white p-6 border-b-2 blitzBlack">
             <div className="flex items-center justify-between">
-                <h1 className={bebasNeue.className + " text-blitzRed hover:text-blitzBlue"}>BLITZ</h1>
+                <h1 className={bebasNeue.className + " text-blitzRed hover:text-blitzBlue text-4xl"}>BLITZ</h1>
                 <div className="hidden md:flex space-x-6">
                     <a className={bebasNeue.className + " hover:text-blitzBlue"} href="#">Martial Arts</a>
                     <a className={bebasNeue.className + " hover:text-blitzBlue"} href="#">Departments</a>
