@@ -20,6 +20,12 @@ module.exports = {
       },
       lineHeight: {
         '12': '3rem',
+      },
+      boxShadow: {
+        'blitzShadow': '0, 0, 4px, -50px, rgba(0, 0, 0, 0.25)'
+      },
+      height: {
+        '128': '32rem'
       }
     },
   },

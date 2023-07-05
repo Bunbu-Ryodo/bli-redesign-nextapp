@@ -13,7 +13,7 @@ import { bebasNeue, dosisSemibold } from '../fonts.js';
 export default function KarateDepartment() {
   return (
     <main>
-      <div className="flex-row">"
+      <div className="flex-row">
         <Navbar></Navbar>
         <section id="karatedepartment">
          <div className="container flex flex-row mx-auto justify-start">
