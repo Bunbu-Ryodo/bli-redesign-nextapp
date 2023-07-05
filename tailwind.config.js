@@ -14,8 +14,12 @@ module.exports = {
       colors: {
         blitzRed: '#74444A',
         blitzYellow: '#E4B777',
+        blitzLighterYellow: 'rgba(228, 183, 119, 0.45)',
         blitzBlack: '#001011',
         blitzBlue: '#20A4F3'
+      },
+      lineHeight: {
+        '12': '3rem',
       }
     },
   },
