@@ -39,7 +39,7 @@ export default function KarateUniforms() {
           <div className="flex flex-col w-9/12">
           <div className="container flex flex-row mt-2 max-[970px]:flex-col max-[970px]:items-center">
             <ProductCard 
-              link="/"
+              link="/diamondkata"
               image={Diamond} 
               alt="Diamond"
               productDescription="Blitz Diamond Kata Karate Gi" 
