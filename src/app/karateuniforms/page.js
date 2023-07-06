@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar/Navbar';
 import ProductCard from '../components/ProductCard/ProductCard';
 import Diamond from './diamond.jpg';
+import FilterCheckboxes from '../components/FilterCheckboxes/FilterCheckboxes';
 import { bebasNeue } from '../fonts';
 
 export default function KarateUniforms() {
@@ -32,7 +33,8 @@ export default function KarateUniforms() {
          </div>
         <div className="flex flex-row max-[970px]:flex-col-reverse max-[970px]:items-center">
           <div className="flex flex-col w-1/4 justify-start mt-4 mb-2 max-[970px]:w-full max-[970px]:items-center">
-            <input placeholder="Search All Uniforms" className="flex border border-blitzRed focus:outline-none w-80 h-10 px-2"></input>
+            <input placeholder="Search All Uniforms" className="flex border border-blitzRed focus:outline-none w-80 h-10 px-2 max-[1440px]:w-9/12"></input>
+            <FilterCheckboxes/>
           </div>
           <div className="flex flex-col w-9/12">
           <div className="container flex flex-row mt-2 max-[970px]:flex-col max-[970px]:items-center">

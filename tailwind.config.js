@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       colors: {
         blitzRed: '#74444A',
+        blitzLighterRed: 'rgba(116, 68, 74, 0.45)',
         blitzYellow: '#E4B777',
         blitzLighterYellow: 'rgba(228, 183, 119, 0.45)',
         blitzBlack: '#001011',
@@ -29,6 +30,6 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 }
 
