@@ -9,8 +9,7 @@ import Diamond5 from './5diamond.png';
 
 export default function DiamondKata(){
     return(
-        <main>
-            <div className="container mx-auto">
+            <div className="container mx-auto h-screen overflow-hidden">
                 <Navbar></Navbar>
                 <div className="container flex flex-row mx-auto justify-start">
                     <a href="/" className={"flex flex-col justify-self-auto px-1 text-blitzBlue hover:text-blitzRed"}>Home /</a>
@@ -22,8 +21,8 @@ export default function DiamondKata(){
                     <h3 className={bebasNeue.className + " text-4xl ml-1 mt-4 text-blitzRed"}>Blitz Adult Diamond Kata Karate Gi</h3>
                     <h5 className={bebasNeue.className + " text-2xl ml-1 mt-4 text-blitzYellow"}>5/5 <a href="#" className="underline decoration-2 text-blitzBlue ml-4">75 Reviews</a></h5>
                 </div>
-                <div className="container flex flex-row">
-                    <div className="flex flex-col w-1/3 items-center">
+                <div className="container flex flex-row h-screen">
+                    <div className="flex flex-col w-1/3 items-center overflow-y-auto">
                         <div className="my-4 mx-auto">
                             <Image src={Diamond1} alt="Diamond 1"/>
                         </div>
@@ -40,7 +39,7 @@ export default function DiamondKata(){
                             <Image src={Diamond5} alt="Diamond 1"/>
                         </div>
                     </div>
-                    <div className="flex flex-col w-2/3 items-start px-2">
+                    <div className="flex flex-col w-2/3 items-start px-2 h-screen">
                         <h5 className={bebasNeue.className + " text-2xl text-blitzRed"}>Introducing the Blitz Diamond Kata Karate Gi </h5>
                         <p>A meticulously crafted for advanced karate practitioners and esteemed instructors. This Gi showcases a traditional Japanese cut 
                         - with shorter sleeves and trousers and a shortened jacket lapel - designed to highlight and enable the high kicks and rapid movements that are integral to Karate. 
@@ -53,7 +52,7 @@ export default function DiamondKata(){
                         The Diamond Kata Karate Gi is available in both traditional white and sleek black, honouring individual preferences and martial arts traditions. Each Gi is accompanied by a drawstring bag for hassle-free storage and transportation.
                         Please note, the belt is not included, allowing you to select one according to your rank and style. 
                         The Blitz Diamond Kata Karate Gi - the embodiment of quality, comfort, and tradition with a nod to the roots of Karate.</p>
-                    <div className="flex flex-row w-full max-[970px]:flex-col">
+                    <div className="flex flex-row w-full max-[970px]:flex-col fixed-top">
                         <div className="flex flex-col w-1/2 mt-4">
                             <p className={dosisSemibold.className + " text-blitzBlack"}>Choose a size:</p>
                             <div className="flex flex-row space-x-2 my-1 max-[770px]:flex-col max-[770px]:space-x-0">
@@ -87,16 +86,15 @@ export default function DiamondKata(){
                     </div>
                     <div className="flex flex-row w-full max-[970px]:flex-col justify-start">
                         <div className="flex flex-row w-1/2 mt-4">
-                            <h5 className={bebasNeue.className + " text-blitzBlue text-2xl align-middle"}>£98.99</h5>
+                            <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline self-center text-center align-middle w-9/12 h-14 leading-12"}>£98.99 - Add to Cart</a>
                         </div>
                         <div className="flex flex-row justify-start w-1/2 mt-4">
-                        <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline self-center text-center align-middle w-9/12 h-14 leading-12"}>Add to Cart</a>
+                        
                         </div>
                     </div>
                     </div>
 
                 </div>
             </div>
-        </main>
     )
 }
