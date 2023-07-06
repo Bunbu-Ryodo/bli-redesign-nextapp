@@ -5,7 +5,7 @@ import { bebasNeue, dosisSemibold } from '../../fonts';
 export default function ProductCard({link, image, alt, productDescription, price, rating, reviews}){
     return(
         <div 
-         class="flex flex-col px-4 py-4 items-center border border-blitzBlack hover:border-none hover:shadow-xl w-80 h-128">
+         class="flex flex-col px-4 py-4 items-center border border-blitzBlack hover:border-none hover:shadow-xl w-80 h-128 mx-2 my-2">
             <a href={link}>
             <div className="flex flex-row justify-center mb-10">
                 <Image src={diamond} alt={alt}></Image>
