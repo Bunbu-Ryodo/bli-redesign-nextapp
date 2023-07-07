@@ -6,10 +6,11 @@ import Diamond2 from './2diamond.png';
 import Diamond3 from './3diamond.png';
 import Diamond4 from './4diamond.png';
 import Diamond5 from './5diamond.png';
+import Review from '../components/Review/Review';
 
 export default function DiamondKata(){
     return(
-            <div className="container mx-auto h-screen overflow-hidden">
+            <div className="container mx-auto h-screen">
                 <Navbar></Navbar>
                 <div className="container flex flex-row mx-auto justify-start">
                     <a href="/" className={"flex flex-col justify-self-auto px-1 text-blitzBlue hover:text-blitzRed"}>Home /</a>
@@ -38,6 +39,13 @@ export default function DiamondKata(){
                         <div className="my-4 mx-auto">
                             <Image src={Diamond5} alt="Diamond 1"/>
                         </div>
+                        <h3 className={bebasNeue.className + " text-blitzYellow self-start"}>5/5</h3>
+                        <h3 className={bebasNeue.className + " text-blitzBlue self-start"}>75 Reviews</h3>
+                        <Review rating={"5/5"} reviewTitle="By Matt on 6th September 2019" reviewContent={"I put this gi to the test the other night and have to say I love it. I'm very happy with this gi, it's comfortable, dose not restrict my movements, it's japanese cut ( thats a bonus for me as i prefer japanese cut ) and it's well made and will stand the test of time! Highly recommended, I dont think I'll be using anything else but my Blitz white diamond, it's a great upgrade from anything else I have owned!"}/>
+                        <Review rating={"5/5"} reviewTitle="By Paul young on 12th February 2019" reviewContent={"Brilliant suit though after two years of hell the trousers between the thighs get very weak but considering I haven't had a suit that has lasted me that long!"}/>
+                        <Review rating={"5/5"} reviewTitle="By Mo on 2nd October 2018" reviewContent={"Possibly the best all round suit. 14oz for advanced practitioners or those who like heavy suits, two trousers, slightly tapered fit and robust ties. These suits lasts a very long time."}/>
+                        <Review rating={"5/5"} reviewTitle="By Mark Watson on 14th June 2018" reviewContent={"Fabulous quality and comes with an extra pair of kumite trousers and all in a lovely bag"}/>
+                        <Review rating={"5/5"} reviewTitle="By John Clift on 1st May 2018" reviewContent={"This is by far a first class gi, i have several of these, the oldest is over 10 years old, and is still in first class shape. If there is one problem with them, its that they should be WKF approved."}></Review>
                     </div>
                     <div className="flex flex-col w-2/3 items-start px-2 h-screen">
                         <h5 className={bebasNeue.className + " text-2xl text-blitzRed"}>Introducing the Blitz Diamond Kata Karate Gi </h5>
