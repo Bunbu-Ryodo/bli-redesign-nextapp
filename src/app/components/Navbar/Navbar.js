@@ -107,7 +107,7 @@ function Navbar(){
                                 <p className="text-blitzBlue">£99.99</p>
                             </div>
                         </div>
-                        <div className="flex flex-col w-96 h-96 justify-end">
+                        <div className="flex flex-col w-96 h-60 justify-end">
                             <h3 className={dosisSemibold.className + " text-blitzBlue"}>Total: £99.99 </h3>
                             <button className={dosisSemibold.className + " bg-blitzRed text-white w-full p-4"}><a href="/precheckout">Go to Checkout</a></button>
                         </div>

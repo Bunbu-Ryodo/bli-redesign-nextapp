@@ -11,7 +11,7 @@ export default function Checkout(){
             <a href="/" className={"flex flex-col justify-self-auto px-1 text-blitzBlue hover:text-blitzRed"}>Home /</a>
             <a href="/karatedepartment" className={"flex flex-col justify-self-auto px-1 text-blitzBlue hover:text-blitzRed"}>Karate Department /</a>
             <a href="/karateuniforms" className={"flex flex-col justify-self-auto px-1 text-blitzBlue"}>Karate Uniforms /</a>
-            <a href="/precheckout" className={"flex flex-col justify-self-auto px-1 text-blitzBlue"}>Join Us</a>
+            <a href="/precheckout" className={"flex flex-col justify-self-auto px-1 text-blitzBlue"}>Join Us /</a>
             <a href="#" className={"flex flex-col justify-self-auto px-1 text-blitzRed"}>Checkout</a>
             </div>
             <div className="container flex flex-col mt-2 w-full">
