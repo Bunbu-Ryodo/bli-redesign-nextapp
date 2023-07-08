@@ -1,3 +1,5 @@
+"use client";
+
 import Navbar from '../components/Navbar/Navbar';
 import { bebasNeue, dosisSemibold } from '../fonts';
 import Image from 'next/image';
@@ -7,8 +9,16 @@ import Diamond3 from './3diamond.png';
 import Diamond4 from './4diamond.png';
 import Diamond5 from './5diamond.png';
 import Review from '../components/Review/Review';
+import { useDispatch } from 'react-redux';
+import { toggleCart } from '@/redux/features/nav-slice.js';
+
 
 export default function DiamondKata(){
+    const dispatch = useDispatch();
+
+    function openCart(){
+        dispatch(toggleCart());
+    }
     return(
             <div className="container mx-auto h-screen">
                 <Navbar></Navbar>
@@ -93,7 +103,7 @@ export default function DiamondKata(){
                         
                     </div>
                     <div className="flex flex-row w-full max-[970px]:flex-col justify-start">
-                        <div className="flex flex-row w-1/2 mt-4">
+                        <div onClick={openCart} className="flex flex-row w-1/2 mt-4">
                             <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline self-center text-center align-middle w-9/12 h-14 leading-12"}>£98.99 - Add to Cart</a>
                         </div>
                         <div className="flex flex-row justify-start w-1/2 mt-4">

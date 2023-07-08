@@ -1,18 +1,54 @@
+"use client"
+
 import { bebasNeue } from '../../fonts.js';
 import { dosisSemibold } from '../../fonts.js';
-
+import { toggleMartialArts, toggleDepartment, togglePersonalized, toggleWishlist, toggleAccount, toggleCart } from '@/redux/features/nav-slice.js';
+import { useDispatch, useSelector } from 'react-redux';
 
 
 function Navbar(){
+
+    const dispatch = useDispatch(); 
+    const martialArts = useSelector((state) => state.navReducer.value.martialArts);
+    const department = useSelector((state) => state.navReducer.value.department);
+    const personalized = useSelector((state) => state.navReducer.value.personalized);
+    const wishlist = useSelector((state) => state.navReducer.value.wishlist);
+    const cart = useSelector((state) => state.navReducer.value.cart);
+    const account = useSelector((state) => state.navReducer.value.account);
+
+    function toggleMaDropdown(){
+        dispatch(toggleMartialArts());
+    }
+
+    function toggleDepDropdownOpen(){
+        dispatch(toggleDepartment());
+    }
+
+    function togglePersonalizedDropdownOpen(){
+        dispatch(togglePersonalized());
+    }
+
+    function toggleWishlistOpen(){
+        dispatch(toggleWishlist());
+    }
+
+    function toggleAccountOpen(){
+        dispatch(toggleAccount());
+    }
+
+    function toggleCartOpen(){
+        dispatch(toggleCart());
+    }
+
     return(
         <nav className="relative container mx-auto bg-white p-6 border-b-2 blitzBlack">
             <div className="flex items-center justify-between w-full">
-                <h1 className={bebasNeue.className + " text-blitzRed hover:text-blitzBlue text-4xl"}>BLITZ</h1>
+                <h1 className={bebasNeue.className + " text-blitzRed hover:text-blitzBlue text-4xl"}><a href="/">BLITZ</a></h1>
                 <div className="hidden md:flex space-x-6">
-                    <button className={bebasNeue.className + " hover:text-blitzBlue text-xl"}>Martial Arts</button>
-                    <div className="hidden absolute top-24 p-1 w-56 left-84 bg-white border border-blitzBlack">
+                    <button onMouseEnter={toggleMaDropdown} className={bebasNeue.className + " hover:text-blitzBlue text-xl"}>Martial Arts</button>
+                    <div onMouseLeave={toggleMaDropdown} className={!martialArts ? "hidden" : " " + " absolute top-24 p-1 w-56 left-84 bg-white border border-blitzBlack"}>
                         <h3 className="text-blitzRed text-xl">All Martial Arts Departments</h3>
-                        <div class="flex flex-col">
+                        <div className="flex flex-col">
                             <a href="#" className="text-xl hover:text-blitzBlue">Aikido</a>
                             <a href="#" className="text-xl hover:text-blitzBlue">Boxing</a>
                             <a href="#" className="text-xl hover:text-blitzBlue">BJJ</a>
@@ -31,8 +67,8 @@ function Navbar(){
                             <a href="#" className="text-xl hover:text-blitzBlue">Tang Soo Doo</a>
                         </div>
                     </div>
-                    <button className={bebasNeue.className + " hover:text-blitzBlue text-xl"} href="#">Departments</button>
-                    <div className="hidden absolute top-24 p-1 w-56 left-84 bg-white border border-blitzBlack">
+                    <button onMouseEnter={toggleDepDropdownOpen}className={bebasNeue.className + " hover:text-blitzBlue text-xl"} href="#">Departments</button>
+                    <div onMouseLeave={toggleDepDropdownOpen} className={!department? "hidden" : " " + "absolute top-24 p-1 w-56 left-84 bg-white border border-blitzBlack"}>
                         <h3 className="text-blitzRed text-xl">General Departments</h3>
                         <div class="flex flex-col">
                             <a href="#" className="text-xl hover:text-blitzBlue">Accessories</a>
@@ -44,29 +80,28 @@ function Navbar(){
                             <a href="#" className="text-xl hover:text-blitzBlue">Training Aids</a>
                         </div>
                     </div>
-                    <button className={bebasNeue.className + " hover:text-blitzBlue text-xl"} href="#">Personalized</button>
-                    <div className="hidden absolute top-24 p-1 w-56 left-84 bg-white border border-blitzBlack">
+                    <button onMouseEnter={togglePersonalizedDropdownOpen} className={bebasNeue.className + " hover:text-blitzBlue text-xl"} href="#">Personalized</button>
+                    <div onMouseLeave={togglePersonalizedDropdownOpen} className={!personalized ? "hidden" : " " + " absolute top-24 p-1 w-56 left-84 bg-white border border-blitzBlack"}>
                         <h3 className="text-blitzRed text-xl">Personalized</h3>
-                        <div class="flex flex-col">
+                        <div className="flex flex-col">
                             <a href="#" className="text-xl hover:text-blitzBlue">Black Belts</a>
                             <a href="#" className="text-xl hover:text-blitzBlue">Student Belts</a>
                             <a href="#" className="text-xl hover:text-blitzBlue">Bags & Other Products</a>
                         </div>
                     </div>
-                </div>
-               
+                </div>    
                 <div className="hidden md:flex space-x-2">
-                    <a href="#" className={dosisSemibold.className + " hidden md:flex p-1 px-2 text-white bg-blitzRed baseline"}>Wishlist</a>
-                    <a href="#" className={dosisSemibold.className + " hidden md:flex p-1 px-2 text-white bg-blitzBlue baseline"}>Account</a>
-                    <button className={dosisSemibold.className + " hidden md:flex p-1 px-2 text-white bg-blitzYellow baseline"} id="cart-dropdown" aria-expanded="false" aria-haspopup="true">Cart</button>  
-                    <div className="hidden absolute top-24 right-1 p-1 bg-white border border-blitzBlack">
+                    <button onClick={toggleWishlistOpen} className="hidden md:flex p-1 px-2 text-white bg-blitzRed baseline">Wishlist</button>
+                    <button onClick={toggleAccountOpen} href="#" className="hidden md:flex p-1 px-2 text-white bg-blitzBlue baseline">Account</button>
+                    <button onClick={toggleCartOpen} id="openCart" className="hidden md:flex p-1 px-2 text-white bg-blitzYellow baseline" id="cart-dropdown" aria-expanded="false" aria-haspopup="true">Cart</button>  
+                    <div className={!cart ? "hidden" : " " + " absolute top-24 right-1 p-1 bg-white border border-blitzBlack"}>
                         <h3 className="text-blitzRed text-xl">Your Cart</h3>
                         <div className="flex flex-col w-96 h-96 justify-end">
                             <h3 className={dosisSemibold.className + " text-blitzB"}>Total: </h3>
                             <button className={dosisSemibold.className + " bg-blitzRed text-white w-full p-4"}>Go to Checkout</button>
                         </div>
                     </div>
-                    <div className="hidden absolute top-24 right-1 p-1 bg-white border border-blitzBlack">
+                    <div className={!account ? "hidden" : " " + " absolute top-24 right-1 p-1 bg-white border border-blitzBlack"}>
                         <h3 className="text-blitzRed text-xl">Your Account</h3>
                         <div className="flex flex-col w-96 justify-start">
                         <a href="#" className="text-xl">Order History</a>
@@ -77,7 +112,7 @@ function Navbar(){
                         <button className={dosisSemibold.className + " bg-blitzRed text-white w-full p-4"}>Login/Sign Up</button>
                         </div>
                     </div>
-                    <div className="hidden absolute top-24 right-1 p-1 bg-white border border-blitzBlack">
+                    <div className={!wishlist ? "hidden" : " " + " absolute top-24 right-1 p-1 bg-white border border-blitzBlack"}>
                         <h3 className="text-blitzRed text-xl">Your Wishlist</h3>
                         <div className="flex flex-col w-96 h-96 justify-end">
                             <h3 className={dosisSemibold.className + " text-blitzB"}></h3>
@@ -90,5 +125,6 @@ function Navbar(){
 
     )
 }
+
 
 export default Navbar;

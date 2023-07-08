@@ -1,5 +1,6 @@
 import './globals.css'
 import { Dosis } from 'next/font/google';
+import ReduxProvider from '../redux/provider'
 
 const dosis = Dosis({subsets: ['latin'], weight: ['400']});
 
@@ -11,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={dosis.className}>{children}</body>
+      <body className={dosis.className}><ReduxProvider>{children}</ReduxProvider></body>
     </html>
   )
 }
