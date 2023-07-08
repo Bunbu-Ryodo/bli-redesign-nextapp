@@ -109,7 +109,7 @@ function Navbar(){
                         </div>
                         <div className="flex flex-col w-96 h-96 justify-end">
                             <h3 className={dosisSemibold.className + " text-blitzBlue"}>Total: £99.99 </h3>
-                            <button className={dosisSemibold.className + " bg-blitzRed text-white w-full p-4"}>Go to Checkout</button>
+                            <button className={dosisSemibold.className + " bg-blitzRed text-white w-full p-4"}><a href="/precheckout">Go to Checkout</a></button>
                         </div>
                     </div>
                     <div className={!account ? "hidden" : " " + " absolute top-24 right-1 p-1 bg-white border border-blitzBlack"}>
