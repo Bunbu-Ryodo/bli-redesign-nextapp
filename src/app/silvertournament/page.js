@@ -3,17 +3,18 @@
 import Navbar from '../components/Navbar/Navbar';
 import { bebasNeue, dosisSemibold } from '../fonts';
 import Image from 'next/image';
-import Diamond1 from './1diamond.jpg';
-import Diamond2 from './2diamond.png';
-import Diamond3 from './3diamond.png';
-import Diamond4 from './4diamond.png';
-import Diamond5 from './5diamond.png';
+import Silver1 from './silver1.png';
+import Silver2 from './silver2.png';
+import Silver3 from './silver3.png';
+import Silver4 from './silver4.png';
+import Silver5 from './silver5.png';
+import Silver6 from './silver6.png';
 import Review from '../components/Review/Review';
 import { useDispatch } from 'react-redux';
 import { toggleCart } from '@/redux/features/nav-slice.js';
 
 
-export default function DiamondKata(){
+export default function SilverTourament(){
     const dispatch = useDispatch();
 
     function openCart(){
@@ -26,52 +27,50 @@ export default function DiamondKata(){
                     <a href="/" className={"flex flex-col justify-self-auto px-1 text-blitzBlue hover:text-blitzRed"}>Home /</a>
                     <a href="/karatedepartment" className={"flex flex-col justify-self-auto px-1 text-blitzBlue hover:text-blitzRed"}>Karate Department /</a>
                     <a href="/karateuniforms" className={"flex flex-col justify-self-auto px-1 text-blitzBlue"}>Karate Uniforms /</a>
-                    <a href="#" className={"flex flex-col justify-self-auto px-1 text-blitzRed"}>Diamond Kata</a>
+                    <a href="#" className={"flex flex-col justify-self-auto px-1 text-blitzRed"}>Silver Tournament</a>
                 </div>
                 <div class="container flex flex-col">
-                    <h3 className={bebasNeue.className + " text-4xl ml-1 mt-4 text-blitzRed"}>Blitz Adult Diamond Kata Karate Gi</h3>
-                    <h5 className={bebasNeue.className + " text-2xl ml-1 mt-4 text-blitzYellow"}>5/5 <a href="#reviews" className="underline decoration-2 text-blitzBlue ml-4">75 Reviews</a></h5>
+                    <h3 className={bebasNeue.className + " text-4xl ml-1 mt-4 text-blitzRed"}>Blitz Adult Zanshin Karate Gi - 12 oz</h3>
+                    <h5 className={bebasNeue.className + " text-2xl ml-1 mt-4 text-blitzYellow"}>5/5 <a href="#reviews" className="underline decoration-2 text-blitzBlue ml-4">35 Reviews</a></h5>
                 </div>
                 <div className="container flex flex-row h-screen">
                     <div className="flex flex-col w-1/3 items-center overflow-y-auto">
                         <div className="my-4 mx-auto">
-                            <Image src={Diamond1} alt="Diamond 1"/>
+                            <Image src={Silver1} alt="Silver 1"/>
                         </div>
                         <div className="my-4 mx-auto">
-                            <Image src={Diamond2} alt="Diamond 1"/>
+                            <Image src={Silver2} alt="Silver 2"/>
                         </div>
                         <div className="my-4 mx-auto">
-                            <Image src={Diamond3} alt="Diamond 1"/>
+                            <Image src={Silver3} alt="Silver 3"/>
                         </div>
                         <div className="my-4 mx-auto">
-                            <Image src={Diamond4} alt="Diamond 1"/>
+                            <Image src={Silver4} alt="Silver 4"/>
                         </div>
                         <div className="my-4 mx-auto">
-                            <Image src={Diamond5} alt="Diamond 1"/>
+                            <Image src={Silver5} alt="Silver 5"/>
                         </div>
-                        <h3 className={bebasNeue.className + " text-blitzYellow self-start"}>5/5</h3>
-                        <h3 className={bebasNeue.className + " text-blitzBlue self-start"}>75 Reviews</h3>
+                        <div className="my-4 mx-auto">
+                            <Image src={Silver6} alt="Silver 6"/>
+                        </div>
                         <div id="reviews">
-                        <Review rating={"5/5"} reviewTitle="By Matt on 6th September 2019" reviewContent={"I put this gi to the test the other night and have to say I love it. I'm very happy with this gi, it's comfortable, dose not restrict my movements, it's japanese cut ( thats a bonus for me as i prefer japanese cut ) and it's well made and will stand the test of time! Highly recommended, I dont think I'll be using anything else but my Blitz white diamond, it's a great upgrade from anything else I have owned!"}/>
-                        <Review rating={"5/5"} reviewTitle="By Paul young on 12th February 2019" reviewContent={"Brilliant suit though after two years of hell the trousers between the thighs get very weak but considering I haven't had a suit that has lasted me that long!"}/>
-                        <Review rating={"5/5"} reviewTitle="By Mo on 2nd October 2018" reviewContent={"Possibly the best all round suit. 14oz for advanced practitioners or those who like heavy suits, two trousers, slightly tapered fit and robust ties. These suits lasts a very long time."}/>
-                        <Review rating={"5/5"} reviewTitle="By Mark Watson on 14th June 2018" reviewContent={"Fabulous quality and comes with an extra pair of kumite trousers and all in a lovely bag"}/>
-                        <Review rating={"5/5"} reviewTitle="By John Clift on 1st May 2018" reviewContent={"This is by far a first class gi, i have several of these, the oldest is over 10 years old, and is still in first class shape. If there is one problem with them, its that they should be WKF approved."}></Review>
+                        <h3 className={bebasNeue.className + " text-blitzYellow self-start"}>5/5</h3>
+                        <h3 className={bebasNeue.className + " text-blitzBlue self-start"}>13 Reviews</h3>
+                        <Review rating={"3/5"} reviewTitle="By Ian on 29th June 2019" reviewContent={"It's a good suit, but not perfect. I've only had gis with elasticated waists before, and this tie version isn't great. I got the 170cm version, and the length of the trouser is perfect for me (34R), but the waist must be about 48in; it's huge. So I have to sort of fold round the top and tie it tight, then end up adjusting it and re-tying it during a session. I'm just waiting for them to come undone and fall down during a fight. The jacket is a great fit, and comfy. Note that the thickness of the cotton means that you get hot - like working out in a jumper. Note also that the thickness of the material means that a) ironing is absolutely necessary, and b) ironing takes a long time! The gi comes in a well made but ultimately pointless bag - I'd rather it had just been a couple of quid cheaper. The only reason for my 3 star rating is the trouser width - if you could chose a waist size, or it was elasticated, it would be a 4-5."}/>
+                        <Review rating={"5/5"} reviewTitle="By Nieky on 9th January 2019" reviewContent={"Really lovely gi, and amazing service. Got a 175 first, exchanged it for a 170, I'm 179. No quibbles, replacement turned up a few days later."}/>
+                        <Review rating={"5/5"} reviewTitle="By Ismael on 5th May 2018" reviewContent={"Bought two of these 10 years ago and I swear by them. Still feel solid wash well stay white keep their shape and fit perfect. Only downsides are drawstrings too light they rip up quickly. Need to buy sturdy ones to replace. Also thick suit so keeps you a tad too warm."}/>
                         </div>
                     </div>
                     <div className="flex flex-col w-2/3 items-start px-2 h-screen">
-                        <h5 className={bebasNeue.className + " text-2xl text-blitzRed"}>Introducing the Blitz Diamond Kata Karate Gi </h5>
-                        <p>A meticulously crafted for advanced karate practitioners and esteemed instructors. This Gi showcases a traditional Japanese cut 
-                        - with shorter sleeves and trousers and a shortened jacket lapel - designed to highlight and enable the high kicks and rapid movements that are integral to Karate. 
-                        The minimalist design presents a canvas for personalization, allowing you to proudly display your unique club logos and affiliations. 
-                        Distinctive features include an elegantly woven Diamond label on the lapel and the top of the left leg, symbolizing the superior Blitz quality.
+                        <h5 className={bebasNeue.className + " text-2xl text-blitzRed"}>An essential choice for dedicated practitioners</h5>
+                        <p>Available in traditional white and sleek black, this Gi features a traditional European cut, providing full-length sleeves and trouser legs for maximum comfort and unrestricted movement during your Kumite routines.</p>
                         <br/>
+                        <p>Its classic, minimalistic design serves as an ideal canvas for personalization, inviting you to showcase your unique club logos and associations with pride. A woven Silver Tournament label subtly enhances both the lapel and the top of the left leg, signifying the exceptional quality of Blitz.</p>
                         <br/>
-                        Made from 100% brushed cotton, this 14oz Gi delivers a lightweight feel while maintaining resilient strength, perfect for the rigours of Kata routines. 
-                        The trousers are equipped with a convenient tie waist, ensuring a secure and comfortable fit, providing unrestricted movement and flexibility. 
-                        The Diamond Kata Karate Gi is available in both traditional white and sleek black, honouring individual preferences and martial arts traditions. Each Gi is accompanied by a drawstring bag for hassle-free storage and transportation.
-                        Please note, the belt is not included, allowing you to select one according to your rank and style. 
-                        The Blitz Diamond Kata Karate Gi - the embodiment of quality, comfort, and tradition with a nod to the roots of Karate.</p>
+                        <p>Constructed from 100% brushed cotton canvas, this 14oz Gi guarantees superior comfort and durability, able to endure the intensity of your Karate practice. The trousers incorporate a traditional tie waist, ensuring a secure fit and seamless mobility.</p>
+                        <br/>
+                        <p>Each Silver Tournament Kumite Karate Gi comes complete with a drawstring bag for easy storage and transportation. Please note, the belt is not included, allowing you the freedom to select one that matches your rank and style. Choose the Blitz Silver Tournament Kumite Karate Gi for a perfect fusion of quality, comfort, and classic elegance in your Karate journey.</p>
+                        <br/>
                     <div className="flex flex-row w-full max-[970px]:flex-col fixed-top">
                         <div className="flex flex-col w-1/2 mt-4">
                             <p className={dosisSemibold.className + " text-blitzBlack"}>Choose a size:</p>

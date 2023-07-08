@@ -10,9 +10,11 @@ export default function ProductCard({link, image, alt, productDescription, price
             <div className="flex flex-row justify-center mb-10">
                 <Image src={diamond} alt={alt}></Image>
             </div>
+            <div className="flex flex-col items-center">
             <h3 className={bebasNeue.className + " text-blitzBlack"}>{productDescription}</h3>
             <h3 className={bebasNeue.className + " text-blitzRed"}>{price}</h3>
             <h3 className={bebasNeue.className + " text-blitzYellow"}>{rating} <span className="text-blitzBlue">{reviews}</span></h3>
+            </div>
             </a>
         </div>
     )

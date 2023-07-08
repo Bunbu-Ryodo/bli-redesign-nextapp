@@ -3,17 +3,17 @@
 import Navbar from '../components/Navbar/Navbar';
 import { bebasNeue, dosisSemibold } from '../fonts';
 import Image from 'next/image';
-import Diamond1 from './1diamond.jpg';
-import Diamond2 from './2diamond.png';
-import Diamond3 from './3diamond.png';
-import Diamond4 from './4diamond.png';
-import Diamond5 from './5diamond.png';
+import Shuhari1 from './shuhari.png';
+import Shuhari2 from './shuhari2.png';
+import Shuhari3 from './shuhari3.png';
+import Shuhari5 from './shuhari5.png';
+import Shuhari6 from './shuhari6.png';
 import Review from '../components/Review/Review';
 import { useDispatch } from 'react-redux';
 import { toggleCart } from '@/redux/features/nav-slice.js';
 
 
-export default function DiamondKata(){
+export default function Shuhari(){
     const dispatch = useDispatch();
 
     function openCart(){
@@ -26,52 +26,44 @@ export default function DiamondKata(){
                     <a href="/" className={"flex flex-col justify-self-auto px-1 text-blitzBlue hover:text-blitzRed"}>Home /</a>
                     <a href="/karatedepartment" className={"flex flex-col justify-self-auto px-1 text-blitzBlue hover:text-blitzRed"}>Karate Department /</a>
                     <a href="/karateuniforms" className={"flex flex-col justify-self-auto px-1 text-blitzBlue"}>Karate Uniforms /</a>
-                    <a href="#" className={"flex flex-col justify-self-auto px-1 text-blitzRed"}>Diamond Kata</a>
+                    <a href="#" className={"flex flex-col justify-self-auto px-1 text-blitzRed"}>Shuhari</a>
                 </div>
                 <div class="container flex flex-col">
-                    <h3 className={bebasNeue.className + " text-4xl ml-1 mt-4 text-blitzRed"}>Blitz Adult Diamond Kata Karate Gi</h3>
-                    <h5 className={bebasNeue.className + " text-2xl ml-1 mt-4 text-blitzYellow"}>5/5 <a href="#reviews" className="underline decoration-2 text-blitzBlue ml-4">75 Reviews</a></h5>
+                    <h3 className={bebasNeue.className + " text-4xl ml-1 mt-4 text-blitzRed"}>Shuhari WKF Approved Karate Gi - 8 oz</h3>
+                    <h5 className={bebasNeue.className + " text-2xl ml-1 mt-4 text-blitzYellow"}><a href="#reviews" className="underline decoration-2 text-blitzBlue ml-4">0 Reviews</a></h5>
                 </div>
                 <div className="container flex flex-row h-screen">
                     <div className="flex flex-col w-1/3 items-center overflow-y-auto">
                         <div className="my-4 mx-auto">
-                            <Image src={Diamond1} alt="Diamond 1"/>
+                            <Image src={Shuhari1} alt="Shuhari 1"/>
                         </div>
                         <div className="my-4 mx-auto">
-                            <Image src={Diamond2} alt="Diamond 1"/>
+                            <Image src={Shuhari2} alt="Shuhari 2"/>
                         </div>
                         <div className="my-4 mx-auto">
-                            <Image src={Diamond3} alt="Diamond 1"/>
+                            <Image src={Shuhari3} alt="Shuhari 3"/>
                         </div>
                         <div className="my-4 mx-auto">
-                            <Image src={Diamond4} alt="Diamond 1"/>
+                            <Image src={Shuhari5} alt="Shuhari 4"/>
                         </div>
                         <div className="my-4 mx-auto">
-                            <Image src={Diamond5} alt="Diamond 1"/>
+                            <Image src={Shuhari6} alt="Shuhari 5"/>
                         </div>
-                        <h3 className={bebasNeue.className + " text-blitzYellow self-start"}>5/5</h3>
-                        <h3 className={bebasNeue.className + " text-blitzBlue self-start"}>75 Reviews</h3>
                         <div id="reviews">
-                        <Review rating={"5/5"} reviewTitle="By Matt on 6th September 2019" reviewContent={"I put this gi to the test the other night and have to say I love it. I'm very happy with this gi, it's comfortable, dose not restrict my movements, it's japanese cut ( thats a bonus for me as i prefer japanese cut ) and it's well made and will stand the test of time! Highly recommended, I dont think I'll be using anything else but my Blitz white diamond, it's a great upgrade from anything else I have owned!"}/>
-                        <Review rating={"5/5"} reviewTitle="By Paul young on 12th February 2019" reviewContent={"Brilliant suit though after two years of hell the trousers between the thighs get very weak but considering I haven't had a suit that has lasted me that long!"}/>
-                        <Review rating={"5/5"} reviewTitle="By Mo on 2nd October 2018" reviewContent={"Possibly the best all round suit. 14oz for advanced practitioners or those who like heavy suits, two trousers, slightly tapered fit and robust ties. These suits lasts a very long time."}/>
-                        <Review rating={"5/5"} reviewTitle="By Mark Watson on 14th June 2018" reviewContent={"Fabulous quality and comes with an extra pair of kumite trousers and all in a lovely bag"}/>
-                        <Review rating={"5/5"} reviewTitle="By John Clift on 1st May 2018" reviewContent={"This is by far a first class gi, i have several of these, the oldest is over 10 years old, and is still in first class shape. If there is one problem with them, its that they should be WKF approved."}></Review>
+                        <h3 className={bebasNeue.className + " text-blitzYellow self-start"}></h3>
+                        <h3 className={bebasNeue.className + " text-blitzBlue self-start"}>0 Reviews</h3>
                         </div>
                     </div>
                     <div className="flex flex-col w-2/3 items-start px-2 h-screen">
-                        <h5 className={bebasNeue.className + " text-2xl text-blitzRed"}>Introducing the Blitz Diamond Kata Karate Gi </h5>
-                        <p>A meticulously crafted for advanced karate practitioners and esteemed instructors. This Gi showcases a traditional Japanese cut 
-                        - with shorter sleeves and trousers and a shortened jacket lapel - designed to highlight and enable the high kicks and rapid movements that are integral to Karate. 
-                        The minimalist design presents a canvas for personalization, allowing you to proudly display your unique club logos and affiliations. 
-                        Distinctive features include an elegantly woven Diamond label on the lapel and the top of the left leg, symbolizing the superior Blitz quality.
+                        <h5 className={bebasNeue.className + " text-2xl text-blitzRed"}>Specifically developed for kumite practitioners</h5>
+                        <p>The incredibly lightweight Shuhari Karate Suit includes the latest moisture management technologies. The ventilated shoulder, waist, hip, underarm and backside areas are designed to draw moisture away from the skin, keeping you cool and comfortable in warm climates.</p>
                         <br/>
+                        <p>For maximum movement and comfort, the gi also incorporates a three-sectional gusset and a super-soft interior, helping the material glide over the skin during intense training sessions. The trousers have an elastic/tie waist for a precise fit.The plain, minimalistic design allows the suit to be personalised with club logos and associations. </p>
                         <br/>
-                        Made from 100% brushed cotton, this 14oz Gi delivers a lightweight feel while maintaining resilient strength, perfect for the rigours of Kata routines. 
-                        The trousers are equipped with a convenient tie waist, ensuring a secure and comfortable fit, providing unrestricted movement and flexibility. 
-                        The Diamond Kata Karate Gi is available in both traditional white and sleek black, honouring individual preferences and martial arts traditions. Each Gi is accompanied by a drawstring bag for hassle-free storage and transportation.
-                        Please note, the belt is not included, allowing you to select one according to your rank and style. 
-                        The Blitz Diamond Kata Karate Gi - the embodiment of quality, comfort, and tradition with a nod to the roots of Karate.</p>
+                        <p>Artwork that is featured includes a woven Shuhari label on the lapel and top of the left leg; and an embroidered Blitz logo on the right chest and on the back of the neck. Comes with an additional drawstring bag to store. Belt not included. 100% polyester. 8oz.</p>
+                        <br/>
+                        <p className={dosisSemibold.className + " text-blitzRed"}>Tested and approved by the Official World Karate Federation (WKF), the Blitz Shuhari WKF Approved Karate Suit is suitable for both National and International competition as well as club use.</p>
+                        <br/>
                     <div className="flex flex-row w-full max-[970px]:flex-col fixed-top">
                         <div className="flex flex-col w-1/2 mt-4">
                             <p className={dosisSemibold.className + " text-blitzBlack"}>Choose a size:</p>
@@ -106,7 +98,7 @@ export default function DiamondKata(){
                     </div>
                     <div className="flex flex-row w-full max-[970px]:flex-col justify-start">
                         <div onClick={openCart} className="flex flex-row w-1/2 mt-4">
-                            <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline self-center text-center align-middle w-9/12 h-14 leading-12"}>£98.99 - Add to Cart</a>
+                            <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline self-center text-center align-middle w-9/12 h-14 leading-12"}>£131.99 - Add to Cart</a>
                         </div>
                         <div className="flex flex-row justify-start w-1/2 mt-4">
                         
