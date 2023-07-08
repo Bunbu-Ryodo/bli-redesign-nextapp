@@ -3,17 +3,19 @@
 import Navbar from '../components/Navbar/Navbar';
 import { bebasNeue, dosisSemibold } from '../fonts';
 import Image from 'next/image';
-import Diamond1 from './1diamond.jpg';
-import Diamond2 from './2diamond.png';
-import Diamond3 from './3diamond.png';
-import Diamond4 from './4diamond.png';
-import Diamond5 from './5diamond.png';
+import Zanshin1 from './zanshin1.png';
+import Zanshin2 from './zanshin2.png';
+import Zanshin3 from './zanshin3.png';
+import Zanshin4 from './zanshin4.png';
+import Zanshin5 from './zanshin5.png';
+import Zanshin6 from './zanshin6.png';
+import Zanshin7 from './zanshin7.png';
 import Review from '../components/Review/Review';
 import { useDispatch } from 'react-redux';
 import { toggleCart } from '@/redux/features/nav-slice.js';
 
 
-export default function DiamondKata(){
+export default function Zanshin(){
     const dispatch = useDispatch();
 
     function openCart(){
@@ -26,52 +28,53 @@ export default function DiamondKata(){
                     <a href="/" className={"flex flex-col justify-self-auto px-1 text-blitzBlue hover:text-blitzRed"}>Home /</a>
                     <a href="/karatedepartment" className={"flex flex-col justify-self-auto px-1 text-blitzBlue hover:text-blitzRed"}>Karate Department /</a>
                     <a href="/karateuniforms" className={"flex flex-col justify-self-auto px-1 text-blitzBlue"}>Karate Uniforms /</a>
-                    <a href="#" className={"flex flex-col justify-self-auto px-1 text-blitzRed"}>Diamond Kata</a>
+                    <a href="#" className={"flex flex-col justify-self-auto px-1 text-blitzRed"}>Zanshin</a>
                 </div>
                 <div class="container flex flex-col">
-                    <h3 className={bebasNeue.className + " text-4xl ml-1 mt-4 text-blitzRed"}>Blitz Adult Diamond Kata Karate Gi</h3>
-                    <h5 className={bebasNeue.className + " text-2xl ml-1 mt-4 text-blitzYellow"}>5/5 <a href="#reviews" className="underline decoration-2 text-blitzBlue ml-4">75 Reviews</a></h5>
+                    <h3 className={bebasNeue.className + " text-4xl ml-1 mt-4 text-blitzRed"}>Blitz Adult Zanshin Karate Gi - 12 oz</h3>
+                    <h5 className={bebasNeue.className + " text-2xl ml-1 mt-4 text-blitzYellow"}>5/5 <a href="#reviews" className="underline decoration-2 text-blitzBlue ml-4">13 Reviews</a></h5>
                 </div>
                 <div className="container flex flex-row h-screen">
                     <div className="flex flex-col w-1/3 items-center overflow-y-auto">
                         <div className="my-4 mx-auto">
-                            <Image src={Diamond1} alt="Diamond 1"/>
+                            <Image src={Zanshin1} alt="Zanshin 1"/>
                         </div>
                         <div className="my-4 mx-auto">
-                            <Image src={Diamond2} alt="Diamond 1"/>
+                            <Image src={Zanshin2} alt="Zanshin 2"/>
                         </div>
                         <div className="my-4 mx-auto">
-                            <Image src={Diamond3} alt="Diamond 1"/>
+                            <Image src={Zanshin3} alt="Zanshin 3"/>
                         </div>
                         <div className="my-4 mx-auto">
-                            <Image src={Diamond4} alt="Diamond 1"/>
+                            <Image src={Zanshin4} alt="Zanshin 4"/>
                         </div>
                         <div className="my-4 mx-auto">
-                            <Image src={Diamond5} alt="Diamond 1"/>
+                            <Image src={Zanshin5} alt="Zanshin 5"/>
                         </div>
-                        <h3 className={bebasNeue.className + " text-blitzYellow self-start"}>5/5</h3>
-                        <h3 className={bebasNeue.className + " text-blitzBlue self-start"}>75 Reviews</h3>
+                        <div className="my-4 mx-auto">
+                            <Image src={Zanshin6} alt="Zanshin 6"/>
+                        </div>
+                        <div className="my-4 mx-auto">
+                            <Image src={Zanshin7} alt="Zanshin 7"/>
+                        </div>
                         <div id="reviews">
-                        <Review rating={"5/5"} reviewTitle="By Matt on 6th September 2019" reviewContent={"I put this gi to the test the other night and have to say I love it. I'm very happy with this gi, it's comfortable, dose not restrict my movements, it's japanese cut ( thats a bonus for me as i prefer japanese cut ) and it's well made and will stand the test of time! Highly recommended, I dont think I'll be using anything else but my Blitz white diamond, it's a great upgrade from anything else I have owned!"}/>
-                        <Review rating={"5/5"} reviewTitle="By Paul young on 12th February 2019" reviewContent={"Brilliant suit though after two years of hell the trousers between the thighs get very weak but considering I haven't had a suit that has lasted me that long!"}/>
-                        <Review rating={"5/5"} reviewTitle="By Mo on 2nd October 2018" reviewContent={"Possibly the best all round suit. 14oz for advanced practitioners or those who like heavy suits, two trousers, slightly tapered fit and robust ties. These suits lasts a very long time."}/>
-                        <Review rating={"5/5"} reviewTitle="By Mark Watson on 14th June 2018" reviewContent={"Fabulous quality and comes with an extra pair of kumite trousers and all in a lovely bag"}/>
-                        <Review rating={"5/5"} reviewTitle="By John Clift on 1st May 2018" reviewContent={"This is by far a first class gi, i have several of these, the oldest is over 10 years old, and is still in first class shape. If there is one problem with them, its that they should be WKF approved."}></Review>
+                        <h3 className={bebasNeue.className + " text-blitzYellow self-start"}>5/5</h3>
+                        <h3 className={bebasNeue.className + " text-blitzBlue self-start"}>13 Reviews</h3>
+                        <Review rating={"3/5"} reviewTitle="By John Clift on 17th December 2019" reviewContent={"I like the gi, nice weight, not to heavy for sparring, but good enough for kata. My only dislike is its a euro cut, it would be nice to have a japanese cut option. For this reason white diamond will still be my first choice."}/>
+                        <Review rating={"5/5"} reviewTitle="By Jacob Willetts on 12th July 2019" reviewContent={"Absolutely fantastic Karate Gi. From someone who has done everything from competing to now instructing, this Gi is one of the best i've ever owned. As its a mid weight Gi its got a nice weight to it and quite baggy as well in order to give you much deeper stances without any restrictions. I love the traditional style to this Gi with the high waisted trousers as well as the cotton canvas material which provides a great snap. I am glad however that I ordered one size smaller than what I normally have (Im 6’2” and normally go for a 190cm) as the jacket is quite baggy, maybe a little too baggy for my taste. But overall a really great quality Gi for the price and would not take too much in order to make this Gi competition legal. The bag is a nice touch too."}/>
+                        <Review rating={"5/5"} reviewTitle="By Jon Holland on 24th November 2018" reviewContent={"I really like this Gi a lot, I teach Karate and also train still. I own so many Gi's, lightweight Gi's from Blitz and others, and also the White Diamond and the Silver Tournament. and I've often found myself alternating depending upon application, Heavyweight for Kata and lightweight for Kumite, In this Gi I have something that feels good for both, 12oz feels like the right compromise point. The Gi is light and roomy, I find that the jacket is pleasantly roomy for my broader frame, especially around the shoulders and neck, where I have felt somewhat \"strangled\" by heavierweight tighter cut Gi's. I am 5ft 10 and 95kg and the size 5 fits wonderfully, there is plenty of room in the arm and leg for someone a few inches taller. I really like the fact that it is preshrunk, so that I'm not playing guess the shrinkage margin when buying. I wear a 5.5 in the white diamond, and when washed, that Gi is tighter than this in a 5. I would have liked to have seen the same heavier hemming detail in the arm and leg ends that the white diamond has, and an elasticated trouser, but other than that these things would not put me off buying this suit again."}/>
                         </div>
                     </div>
                     <div className="flex flex-col w-2/3 items-start px-2 h-screen">
-                        <h5 className={bebasNeue.className + " text-2xl text-blitzRed"}>Introducing the Blitz Diamond Kata Karate Gi </h5>
-                        <p>A meticulously crafted for advanced karate practitioners and esteemed instructors. This Gi showcases a traditional Japanese cut 
-                        - with shorter sleeves and trousers and a shortened jacket lapel - designed to highlight and enable the high kicks and rapid movements that are integral to Karate. 
-                        The minimalist design presents a canvas for personalization, allowing you to proudly display your unique club logos and affiliations. 
-                        Distinctive features include an elegantly woven Diamond label on the lapel and the top of the left leg, symbolizing the superior Blitz quality.
+                        <h5 className={bebasNeue.className + " text-2xl text-blitzRed"}>Traditional design and modern functionality</h5>
+                        <p>Available in traditional white and sleek black, this Gi features a European cut, providing full-length sleeves and trouser legs for maximum comfort and unrestricted movement during your Karate routines.</p>
                         <br/>
+                        <p>The classic, minimalistic design serves as a versatile canvas for personalization, enabling you to proudly display your unique club logos and associations. A woven Zanshin label subtly embellishes the lapel and the top of the left leg, symbolizing the meticulous quality and craftsmanship of Blitz.</p>
                         <br/>
-                        Made from 100% brushed cotton, this 14oz Gi delivers a lightweight feel while maintaining resilient strength, perfect for the rigours of Kata routines. 
-                        The trousers are equipped with a convenient tie waist, ensuring a secure and comfortable fit, providing unrestricted movement and flexibility. 
-                        The Diamond Kata Karate Gi is available in both traditional white and sleek black, honouring individual preferences and martial arts traditions. Each Gi is accompanied by a drawstring bag for hassle-free storage and transportation.
-                        Please note, the belt is not included, allowing you to select one according to your rank and style. 
-                        The Blitz Diamond Kata Karate Gi - the embodiment of quality, comfort, and tradition with a nod to the roots of Karate.</p>
+                        <p>Fabricated from 100% woven cotton canvas, this 12oz middleweight Gi strikes the balance between comfort and durability, ready to accommodate the rigors of your Karate practice. The trousers incorporate a traditional tie waist, ensuring a secure fit and seamless mobility.</p>
+                        <br/>
+                        <p>Each Zanshin Karate Gi comes complete with a drawstring bag for easy storage and transportation. Please note that the belt is not included, giving you the freedom to choose one that aligns with your rank and style. Choose the Blitz Zanshin Karate Gi for an impeccable fusion of quality, comfort, and classic style in your Karate journey.</p>
+                        <br/>
                     <div className="flex flex-row w-full max-[970px]:flex-col fixed-top">
                         <div className="flex flex-col w-1/2 mt-4">
                             <p className={dosisSemibold.className + " text-blitzBlack"}>Choose a size:</p>
@@ -106,7 +109,7 @@ export default function DiamondKata(){
                     </div>
                     <div className="flex flex-row w-full max-[970px]:flex-col justify-start">
                         <div onClick={openCart} className="flex flex-row w-1/2 mt-4">
-                            <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline self-center text-center align-middle w-9/12 h-14 leading-12"}>£98.99 - Add to Cart</a>
+                            <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline self-center text-center align-middle w-9/12 h-14 leading-12"}>£86.99 - Add to Cart</a>
                         </div>
                         <div className="flex flex-row justify-start w-1/2 mt-4">
                         

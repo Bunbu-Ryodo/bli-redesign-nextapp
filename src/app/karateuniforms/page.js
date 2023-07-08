@@ -1,6 +1,11 @@
 import Navbar from '../components/Navbar/Navbar';
 import ProductCard from '../components/ProductCard/ProductCard';
 import Diamond from './diamond.jpg';
+import Odachi from './odachi.jpg';
+import Kokoro from './kokoro.jpg';
+import Shuhari from './shuhari.jpg';
+import SilverTournament from './silvertournament.jpg'
+import Zanshin from './zanshin.jpg';
 import FilterCheckboxes from '../components/FilterCheckboxes/FilterCheckboxes';
 import { bebasNeue } from '../fonts';
 
@@ -48,51 +53,51 @@ export default function KarateUniforms() {
               reviews="(75 Reviews)"
             />
             <ProductCard 
-              link="/"
-              image={Diamond} 
-              alt="Diamond"
-              productDescription="Blitz Diamond Kata Karate Gi" 
-              price="£95.99-£115.99" 
-              rating="5/5" 
-              reviews="(75 Reviews)"
+              link="/kokoro"
+              image={Kokoro} 
+              alt="Kokoro"
+              productDescription="Blitz Kokoro Karate Gi - 10 oz" 
+              price="£71.99 - £91.99" 
+              rating="4/5" 
+              reviews="(1 Reviews)"
             />
             <ProductCard 
-              link="/"
-              image={Diamond} 
-              alt="Diamond"
-              productDescription="Blitz Diamond Kata Karate Gi" 
-              price="£95.99-£115.99" 
+              link="/zanshin"
+              image={Zanshin} 
+              alt="Zanshin"
+              productDescription="Blitz Zanshin Karate Gi - 12 oz" 
+              price="£83.99 - £103.99" 
               rating="5/5" 
-              reviews="(75 Reviews)"
+              reviews="(13 Reviews)"
             />
           </div>
           <div className="container flex flex-row max-[970px]:flex-col max-[970px]:items-center">
             <ProductCard 
-              link="/"
-              image={Diamond} 
-              alt="Diamond"
-              productDescription="Blitz Diamond Kata Karate Gi" 
+              link="/silvertournament"
+              image={SilverTournament} 
+              alt="Silver Tournament"
+              productDescription="Silver Tournament Karate Gi - 14 oz" 
               price="£95.99-£115.99" 
               rating="5/5" 
-              reviews="(75 Reviews)"
+              reviews="(35 Reviews)"
             />
             <ProductCard 
-              link="/"
-              image={Diamond} 
-              alt="Diamond"
-              productDescription="Blitz Diamond Kata Karate Gi" 
-              price="£95.99-£115.99" 
-              rating="5/5" 
-              reviews="(75 Reviews)"
+              link="/odachi"
+              image={Odachi} 
+              alt="Odachi"
+              productDescription="Odachi WKF Approved Karate Gi - 14 oz" 
+              price="£131.99" 
+              rating="4/5" 
+              reviews="(25 Reviews)"
           />
             <ProductCard 
-              link="/"
-              image={Diamond} 
-              alt="Diamond"
-              productDescription="Blitz Diamond Kata Karate Gi" 
-              price="£95.99-£115.99" 
-              rating="5/5" 
-              reviews="(75 Reviews)"
+              link="/shuhari"
+              image={Shuhari} 
+              alt="Shuhari"
+              productDescription="Shuhari WKF Approved Karate Gi - 8 oz" 
+              price="£131.99" 
+              rating="n/a" 
+              reviews="(0 Reviews)"
             />
           </div>
             

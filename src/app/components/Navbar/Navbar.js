@@ -4,7 +4,8 @@ import { bebasNeue } from '../../fonts.js';
 import { dosisSemibold } from '../../fonts.js';
 import { toggleMartialArts, toggleDepartment, togglePersonalized, toggleWishlist, toggleAccount, toggleCart } from '@/redux/features/nav-slice.js';
 import { useDispatch, useSelector } from 'react-redux';
-
+import Image from 'next/image';
+import smallGi from './small_gi.png';
 
 function Navbar(){
 
@@ -93,12 +94,22 @@ function Navbar(){
                 <div className="hidden md:flex space-x-2">
                     <button onClick={toggleWishlistOpen} className="hidden md:flex p-1 px-2 text-white bg-blitzRed baseline">Wishlist</button>
                     <button onClick={toggleAccountOpen} href="#" className="hidden md:flex p-1 px-2 text-white bg-blitzBlue baseline">Account</button>
-                    <button onClick={toggleCartOpen} id="openCart" className="hidden md:flex p-1 px-2 text-white bg-blitzYellow baseline" id="cart-dropdown" aria-expanded="false" aria-haspopup="true">Cart</button>  
+                    <button onClick={toggleCartOpen} id="openCart" className="hidden md:flex p-1 px-2 text-white bg-blitzYellow baseline">Cart</button>  
                     <div className={!cart ? "hidden" : " " + " absolute top-24 right-1 p-1 bg-white border border-blitzBlack"}>
                         <h3 className="text-blitzRed text-xl">Your Cart</h3>
-                        <div className="flex flex-col w-96 h-96 justify-end">
-                            <h3 className={dosisSemibold.className + " text-blitzB"}>Total: </h3>
-                            <button className={dosisSemibold.className + " bg-blitzRed text-white w-full p-4"}>Go to Checkout</button>
+                        <div className="flex flex-row justify-start px-4">
+                            <div>
+                                <Image src={smallGi} al="small gi"></Image>
+                            </div>
+                            <div className="flex flex-col">
+                                <p className="text-blitzRed">White Karate Gi</p>
+                                <p className="text-blitzBlack">White - Size 4/170cm</p>
+                                <p className="text-blitzBlue">£99.99</p>
+                            </div>
+                        </div>
+                        <div className="flex flex-col w-96 h-60 justify-end">
+                            <h3 className={dosisSemibold.className + " text-blitzBlue"}>Total: £99.99 </h3>
+                            <button className={dosisSemibold.className + " bg-blitzRed text-white w-full p-4"}><a href="/precheckout">Go to Checkout</a></button>
                         </div>
                     </div>
                     <div className={!account ? "hidden" : " " + " absolute top-24 right-1 p-1 bg-white border border-blitzBlack"}>

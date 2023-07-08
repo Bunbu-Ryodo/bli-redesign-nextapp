@@ -3,17 +3,20 @@
 import Navbar from '../components/Navbar/Navbar';
 import { bebasNeue, dosisSemibold } from '../fonts';
 import Image from 'next/image';
-import Diamond1 from './1diamond.jpg';
-import Diamond2 from './2diamond.png';
-import Diamond3 from './3diamond.png';
-import Diamond4 from './4diamond.png';
-import Diamond5 from './5diamond.png';
+import Kokoro1 from './kokoro1.png';
+import Kokoro2 from './kokoro2.png';
+import Kokoro3 from './kokoro3.png';
+import Kokoro4 from './kokoro4.png';
+import Kokoro5 from './kokoro5.png';
+import Kokoro6 from './kokoro6.png';
+import Kokoro7 from './kokoro7.png';
+import Kokoro8 from './kokoro8.png';
 import Review from '../components/Review/Review';
 import { useDispatch } from 'react-redux';
 import { toggleCart } from '@/redux/features/nav-slice.js';
 
 
-export default function DiamondKata(){
+export default function Kokoro(){
     const dispatch = useDispatch();
 
     function openCart(){
@@ -26,52 +29,52 @@ export default function DiamondKata(){
                     <a href="/" className={"flex flex-col justify-self-auto px-1 text-blitzBlue hover:text-blitzRed"}>Home /</a>
                     <a href="/karatedepartment" className={"flex flex-col justify-self-auto px-1 text-blitzBlue hover:text-blitzRed"}>Karate Department /</a>
                     <a href="/karateuniforms" className={"flex flex-col justify-self-auto px-1 text-blitzBlue"}>Karate Uniforms /</a>
-                    <a href="#" className={"flex flex-col justify-self-auto px-1 text-blitzRed"}>Diamond Kata</a>
+                    <a href="#" className={"flex flex-col justify-self-auto px-1 text-blitzRed"}>Kokoro</a>
                 </div>
                 <div class="container flex flex-col">
-                    <h3 className={bebasNeue.className + " text-4xl ml-1 mt-4 text-blitzRed"}>Blitz Adult Diamond Kata Karate Gi</h3>
-                    <h5 className={bebasNeue.className + " text-2xl ml-1 mt-4 text-blitzYellow"}>5/5 <a href="#reviews" className="underline decoration-2 text-blitzBlue ml-4">75 Reviews</a></h5>
+                    <h3 className={bebasNeue.className + " text-4xl ml-1 mt-4 text-blitzRed"}>Blitz Adult Kokoro Karate Gi - 10 oz</h3>
+                    <h5 className={bebasNeue.className + " text-2xl ml-1 mt-4 text-blitzYellow"}>4/5 <a href="#reviews" className="underline decoration-2 text-blitzBlue ml-4">1 Review</a></h5>
                 </div>
                 <div className="container flex flex-row h-screen">
                     <div className="flex flex-col w-1/3 items-center overflow-y-auto">
                         <div className="my-4 mx-auto">
-                            <Image src={Diamond1} alt="Diamond 1"/>
+                            <Image src={Kokoro1} alt="Kokoro 1"/>
                         </div>
                         <div className="my-4 mx-auto">
-                            <Image src={Diamond2} alt="Diamond 1"/>
+                            <Image src={Kokoro2} alt="Kokoro 2"/>
                         </div>
                         <div className="my-4 mx-auto">
-                            <Image src={Diamond3} alt="Diamond 1"/>
+                            <Image src={Kokoro3} alt="Kokoro 3"/>
                         </div>
                         <div className="my-4 mx-auto">
-                            <Image src={Diamond4} alt="Diamond 1"/>
+                            <Image src={Kokoro4} alt="Kokoro 4"/>
                         </div>
                         <div className="my-4 mx-auto">
-                            <Image src={Diamond5} alt="Diamond 1"/>
+                            <Image src={Kokoro5} alt="Kokoro 5"/>
                         </div>
-                        <h3 className={bebasNeue.className + " text-blitzYellow self-start"}>5/5</h3>
-                        <h3 className={bebasNeue.className + " text-blitzBlue self-start"}>75 Reviews</h3>
+                        <div className="my-4 mx-auto">
+                            <Image src={Kokoro6} alt="Kokoro 6"/>
+                        </div>
+                        <div className="my-4 mx-auto">
+                            <Image src={Kokoro7} alt="Kokoro 7"/>
+                        </div>
+                        <div className="my-4 mx-auto">
+                            <Image src={Kokoro8} alt="Kokoro 8"/>
+                        </div>
                         <div id="reviews">
-                        <Review rating={"5/5"} reviewTitle="By Matt on 6th September 2019" reviewContent={"I put this gi to the test the other night and have to say I love it. I'm very happy with this gi, it's comfortable, dose not restrict my movements, it's japanese cut ( thats a bonus for me as i prefer japanese cut ) and it's well made and will stand the test of time! Highly recommended, I dont think I'll be using anything else but my Blitz white diamond, it's a great upgrade from anything else I have owned!"}/>
-                        <Review rating={"5/5"} reviewTitle="By Paul young on 12th February 2019" reviewContent={"Brilliant suit though after two years of hell the trousers between the thighs get very weak but considering I haven't had a suit that has lasted me that long!"}/>
-                        <Review rating={"5/5"} reviewTitle="By Mo on 2nd October 2018" reviewContent={"Possibly the best all round suit. 14oz for advanced practitioners or those who like heavy suits, two trousers, slightly tapered fit and robust ties. These suits lasts a very long time."}/>
-                        <Review rating={"5/5"} reviewTitle="By Mark Watson on 14th June 2018" reviewContent={"Fabulous quality and comes with an extra pair of kumite trousers and all in a lovely bag"}/>
-                        <Review rating={"5/5"} reviewTitle="By John Clift on 1st May 2018" reviewContent={"This is by far a first class gi, i have several of these, the oldest is over 10 years old, and is still in first class shape. If there is one problem with them, its that they should be WKF approved."}></Review>
+                        <h3 className={bebasNeue.className + " text-blitzYellow self-start"}>4/5</h3>
+                        <h3 className={bebasNeue.className + " text-blitzBlue self-start"}>1 Reviews</h3>
+                        <Review rating={"4/5"} reviewTitle="By Gary on 19th June 2020" reviewContent={"For reference, I'm 185cm & 90kg and the size 5/180 fits perfectly. No running over the wrists or heels. Quality is good especially for price. Does not have a pronounced snap like a 12 Oz or 14 Oz but that was expected. A good utility Gi but as per the price, don't compare it to the White Diamond which is still No 1!"}/>
                         </div>
                     </div>
                     <div className="flex flex-col w-2/3 items-start px-2 h-screen">
-                        <h5 className={bebasNeue.className + " text-2xl text-blitzRed"}>Introducing the Blitz Diamond Kata Karate Gi </h5>
-                        <p>A meticulously crafted for advanced karate practitioners and esteemed instructors. This Gi showcases a traditional Japanese cut 
-                        - with shorter sleeves and trousers and a shortened jacket lapel - designed to highlight and enable the high kicks and rapid movements that are integral to Karate. 
-                        The minimalist design presents a canvas for personalization, allowing you to proudly display your unique club logos and affiliations. 
-                        Distinctive features include an elegantly woven Diamond label on the lapel and the top of the left leg, symbolizing the superior Blitz quality.
+                        <h5 className={bebasNeue.className + " text-2xl text-blitzRed"}>Designed for the dedicated and the determined</h5>
+                        <p>The Blitz Kokoro Karate Gi is your companion for intense training sessions and competitive events. This Gi, available in both traditional white and sleek black, exhibits a European cut offering full-length sleeves and trouser legs, delivering maximum comfort and unrestrained movement during your Karate routines.</p>
                         <br/>
+                        <p>Crafted with reinforced seams, this Gi promises enhanced durability to stand up to the rigor of your practice. The trousers feature a traditional tie waist, ensuring a precise fit for effortless mobility.</p>
                         <br/>
-                        Made from 100% brushed cotton, this 14oz Gi delivers a lightweight feel while maintaining resilient strength, perfect for the rigours of Kata routines. 
-                        The trousers are equipped with a convenient tie waist, ensuring a secure and comfortable fit, providing unrestricted movement and flexibility. 
-                        The Diamond Kata Karate Gi is available in both traditional white and sleek black, honouring individual preferences and martial arts traditions. Each Gi is accompanied by a drawstring bag for hassle-free storage and transportation.
-                        Please note, the belt is not included, allowing you to select one according to your rank and style. 
-                        The Blitz Diamond Kata Karate Gi - the embodiment of quality, comfort, and tradition with a nod to the roots of Karate.</p>
+                        <p>The classic, minimalistic design of the Gi opens the door for personalization, allowing you to display your unique club logos and associations with pride. A woven Kokoro label subtly graces the lapel and the top of the left leg, underlining the exceptional quality and craftsmanship of Blitz.</p>
+                        <br/>
                     <div className="flex flex-row w-full max-[970px]:flex-col fixed-top">
                         <div className="flex flex-col w-1/2 mt-4">
                             <p className={dosisSemibold.className + " text-blitzBlack"}>Choose a size:</p>
@@ -106,7 +109,7 @@ export default function DiamondKata(){
                     </div>
                     <div className="flex flex-row w-full max-[970px]:flex-col justify-start">
                         <div onClick={openCart} className="flex flex-row w-1/2 mt-4">
-                            <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline self-center text-center align-middle w-9/12 h-14 leading-12"}>£98.99 - Add to Cart</a>
+                            <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline self-center text-center align-middle w-9/12 h-14 leading-12"}>£74.99 - Add to Cart</a>
                         </div>
                         <div className="flex flex-row justify-start w-1/2 mt-4">
                         
