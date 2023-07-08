@@ -1,7 +1,7 @@
 import Navbar from '../components/Navbar/Navbar';
 import { bebasNeue, dosisSemibold } from '../fonts';
-import blitzDojo from './blitzdojo.png';
 import Image from 'next/image';
+import blitzDojo from './blitzdojo.png';
 
 export default function PreCheckout(){
     return(
@@ -20,7 +20,7 @@ export default function PreCheckout(){
             <div className="flex flex-col items-end w-1/2 mt-8 px-6 py-6">
                 <h1 className={bebasNeue.className + " text-4xl"}>Want to checkout as a Guest?</h1>
                 <div className="my-8">(We'll just need your email)</div>
-                <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline text-center align-middle w-1/2 h-14 leading-12"}>Checkout as a Guest</a>
+                <a href="/checkout" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline text-center align-middle w-1/2 h-14 leading-12"}>Checkout as a Guest</a>
             </div>
             <div className="flex flex-col items-start w-1/2 mt-8 px-6 py-6">
             <h1 className={bebasNeue.className + " text-4xl text-blitzBlue"}>JOIN BLITZ DOJO
@@ -31,7 +31,7 @@ export default function PreCheckout(){
                 ● Get exclusive member deals and discounts<br/>
                 ● Join our fast growing community of martial artists in our message forums and Discord.<br/>
                 </div>
-                <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzBlue baseline text-center align-middle w-1/2 h-14 leading-12"}>Checkout as a Guest</a>
+                <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzBlue baseline text-center align-middle w-1/2 h-14 leading-12"}>Join Blitz Dojo</a>
             </div>
         </div>
         </div>
