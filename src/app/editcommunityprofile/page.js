@@ -31,7 +31,7 @@ export default function EditCommunityProfile(){
     const wisdom = useSelector((state) => state.profileReducer.value.wisdom);
     const experience = useSelector((state) => state.profileReducer.value.experience);
 
-    console.log(taiji);
+    console.log(taiji, "TAIJI");
 
     function selectTaiji(){
         dispatch(toggleTaijiTrue());
@@ -55,6 +55,7 @@ export default function EditCommunityProfile(){
 
     function changeName(txt){
         dispatch(setName(txt));
+        console.log(name, "NAME");
     }
 
     function changeWisdom(txt){
@@ -112,7 +113,9 @@ export default function EditCommunityProfile(){
                         changeWisdom(wiseWords);
                         changeExperience(martialJourney);
                     }
-                }className={dosisSemibold.className + " p-1 px-10 text-white bg-blitzRed baseline self-center text-center align-middle w-9/6 max-[970px]:w-full mx-auto mt-8 h-14 leading-12"}>Save Changes</button>
+                }className={dosisSemibold.className + " p-1 px-10 text-white bg-blitzRed baseline self-center text-center align-middle w-9/6 max-[970px]:w-full mx-auto mt-8 h-14 leading-12 hover:bg-blitzLighterRed active:bg-blitzActiveRed"}>Save Changes</button>
+                <button className={dosisSemibold.className + " p-1 px-10 text-white bg-blitzRed baseline self-center text-center align-middle w-9/6 max-[970px]:w-full mx-auto mt-8 h-14 leading-12 hover:bg-blitzLighterRed active:bg-blitzActiveRed"}><a href="/communityprofile">
+                View Your Profile</a></button>
             </div>
         </div>
     )

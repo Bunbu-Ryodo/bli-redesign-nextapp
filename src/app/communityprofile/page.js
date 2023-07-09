@@ -21,7 +21,7 @@ export default function YourProfile(){
     const wisdom = useSelector((state) => state.profileReducer.value.wisdom);
     const experience = useSelector((state) => state.profileReducer.value.experience);
     
-    console.log(taiji);
+    console.log(name, "NAME");
 
     return (
         <div className="container mx-auto h-full">
