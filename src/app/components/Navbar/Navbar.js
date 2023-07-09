@@ -119,7 +119,7 @@ function Navbar(){
                         <a href="#" className="text-xl">Saved Quotes</a>
                         <a href="#" className="text-xl">Payment Settings</a>
                         <a href="#" className="text-xl">Your Details</a>
-                        <a href="#" className="text-xl">Edit Your Community Profile</a>
+                        <a href="/editcommunityprofile" className="text-xl">Edit Your Community Profile</a>
                         <button className={dosisSemibold.className + " bg-blitzRed text-white w-full p-4"}>Login/Sign Up</button>
                         </div>
                     </div>
