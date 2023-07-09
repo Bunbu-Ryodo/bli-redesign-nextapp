@@ -7,8 +7,18 @@ import Katana from './katana.jpg';
 import Shine from './shine.jpg';
 import Makiwara from './makiwara.jpg';
 import Omedetou from './omedetou.jpg';
+import { useDispatch, useSelector } from 'react-redux';
+import { toggleTaijiTrue, toggleToriTrue, toggleKatanaTrue, toggleMakiwaraTrue, toggleShineTrue } from '@/redux/features/community-slice.js';
 
 export default function EditCommunityProfile(){
+
+    const dispatch = useDispatch(); 
+    const taiji = useSelector((state) => state.navReducer.value.taiji);
+    const tori = useSelector((state) => state.navReducer.value.tori);
+    const katana = useSelector((state) => state.navReducer.value.katana);
+    const makiwara = useSelector((state) => state.navReducer.value.makiwara);
+    const shine = useSelector((state) => state.navReducer.value.shine);
+
     return(
         <div className="container mx-auto h-full w-full">
             <Navbar></Navbar>
