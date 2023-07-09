@@ -69,7 +69,7 @@ export default function EditCommunityProfile(){
     return(
         <div className="container mx-auto h-full w-full">
             <Navbar></Navbar>
-            <h3 className={bebasNeue.className + " text-blitzRed text-2xl ml-1 mb-2"}>Edit Community Profile</h3>
+            <h3 className={bebasNeue.className + " text-blitzRed text-4xl ml-1 mb-2"}>Edit Community Profile</h3>
             <div className="container flex flex-col items-center w-full">
                 <h3 className="text-xl ml-1 mt-5 mb-5">Choose an Avatar</h3>
                 <div className="flex flex-row mx-auto justify-evenly space-x-4">
