@@ -13,8 +13,8 @@ const initialState = {
     }
 }
 
-export const community = createSlice({
-    name: "community",
+export const profile = createSlice({
+    name: "profile",
     initialState,
     reducers: {
         toggleTaijiTrue: function(state){
@@ -81,9 +81,50 @@ export const community = createSlice({
 
             newState.value.shine = true;
             return newState;
+        },
+        setName: function(state, action){
+            return {
+                value: {
+                    taiji: state.value.taiji,
+                    tori: state.value.tori,
+                    katana: state.value.katana,
+                    makiwara: state.value.makiwara,
+                    shine: state.value.shine,
+                    name: action.payload,
+                    wisdom: state.value.wisdom,
+                    experience: state.value.experiencce
+                }
+            }
+        },
+        setWisdom: function(state, action){
+            return {
+                value: {
+                    taiji: state.value.taiji,
+                    tori: state.value.tori,
+                    katana: state.value.katana,
+                    makiwara: state.value.makiwara,
+                    shine: state.value.shine,
+                    name: state.value.name,
+                    wisdom: action.payload,
+                    experience: state.value.experience
+                }
+            }
+        },
+        setExperience: function(state, action){
+            return {
+                value: {
+                    taiji: state.value.taiji,
+                    tori: state.value.tori,
+                    katana: state.value.katana,
+                    makiwara: state.value.makiwara,
+                    shine: state.value.shine,
+                    name: state.value.name,
+                    wisdom: state.value.wisdom,
+                    experience: action.payload
+            }
         }
     }
-});
+}});
 
-export const { toggleTaijiTrue, toggleToriTrue, toggleKatanaTrue, toggleMakiwaraTrue, toggleShineTrue } = community.actions;
-export default community.reducer;
+export const { toggleTaijiTrue, toggleToriTrue, toggleKatanaTrue, toggleMakiwaraTrue, toggleShineTrue, setName, setWisdom, setExperience } = profile.actions;
+export default profile.reducer;
