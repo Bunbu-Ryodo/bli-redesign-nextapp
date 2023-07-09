@@ -40,7 +40,7 @@ export default function KarateDepartment() {
                      An inferior Karate gi will easily rip and stick to your skin when you get sweaty, 
                      while a quality one will survive considerable pulling and sparring without restricting your movements in the slightest. 
                      Blitz has an impressive collection of great value Karate uniforms for sale.</p>
-                     <a href="/karateuniforms" className={dosisSemibold.className + " p-1 px-1 mt-8 text-white bg-blitzRed baseline self-center text-center align-middle w-full h-14 leading-12"}>Shop All Karategi</a>
+                     <a href="/karateuniforms" className={dosisSemibold.className + " p-1 px-1 mt-8 text-white bg-blitzRed baseline self-center text-center align-middle w-full h-14 leading-12 hover:bg-blitzLighterRed active:bg-blitzActiveRed"}>Shop All Karategi</a>
                   </div>
                   
                </div>
@@ -49,19 +49,19 @@ export default function KarateDepartment() {
          <div className="container flex flex-row max-[970px]:flex-col max-[970px]:content-center w-full mx-auto my-10 flex-wrap">
                <div className="flex flex-col items-center mt-6 w-1/4 max-[970px]:w-1/2">
                   <Image src={Tonfa} alt="Tonfa" height={250} width={250}></Image>
-                  <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline self-center text-center align-middle w-4/5 max-[970px]:w-full mx-auto mt-8 h-14 leading-12"}>Shop Training Aids</a>
+                  <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline self-center text-center align-middle w-4/5 max-[970px]:w-full mx-auto mt-8 h-14 leading-12 hover:bg-blitzLighterRed active:bg-blitzActiveRed"}>Shop Training Aids</a>
                </div>
                <div className="flex flex-col items-center mt-6 w-1/4 max-[970px]:w-1/2 ">
                   <Image src={Belt} alt="Belt" height={250} width={250}></Image>
-                  <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline self-center text-center align-middle w-4/5 max-[970px]:w-full mx-auto mt-8 h-14 leading-12"}>Shop Belts</a>
+                  <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline self-center text-center align-middle w-4/5 max-[970px]:w-full mx-auto mt-8 h-14 leading-12 hover:bg-blitzLighterRed active:bg-blitzActiveRed"}>Shop Belts</a>
                </div>
                <div className="flex flex-col items-center mt-6 w-1/4 max-[970px]:w-1/2 ">
                   <Image src={BodyArmour} alt="Body Armour" height={250} width={250}></Image>   
-                  <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline self-center text-center align-middle w-4/5 max-[970px]:w-full mx-auto mt-8 h-14 leading-12"}>Shop Armour</a>
+                  <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline self-center text-center align-middle w-4/5 max-[970px]:w-full mx-auto mt-8 h-14 leading-12 hover:bg-blitzLighterRed active:bg-blitzActiveRed"}>Shop Armour</a>
                </div>
                <div className="flex flex-col items-center mt-6 w-1/4 max-[970px]:w-1/2 ">
                   <Image src={Hoodie} alt="Hoodie" height={250} width={250}></Image> 
-                  <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline self-center text-center align-middle w-4/5 max-[970px]:w-full mx-auto mt-8 h-14 leading-12"}>Shop Merch</a>
+                  <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline self-center text-center align-middle w-4/5 max-[970px]:w-full mx-auto mt-8 h-14 leading-12 hover:bg-blitzLighterRed active:bg-blitzActiveRed"}>Shop Merch</a>
                </div>
             </div>
          <div className="container flex flex-row max-[970px]:flex-col-reverse justify-evenly px-10 py-10 mx-auto my-10 bg-blitzLighterYellow">
@@ -93,7 +93,7 @@ export default function KarateDepartment() {
                      that this number is more likely to lie around 100 million.</p>
                      <br/>
                      <h1 className={bebasNeue.className + " text-2xl"}>Will you be one of them?</h1>
-                     <a href="/karateuniforms" className={dosisSemibold.className + " p-1 px-1 mt-8 text-white bg-blitzRed baseline self-center text-center align-middle w-full h-14 leading-12"}>Pick Your Karategi</a>
+                     <a href="/karateuniforms" className={dosisSemibold.className + " p-1 px-1 mt-8 text-white bg-blitzRed baseline self-center text-center align-middle w-full h-14 leading-12 hover:bg-blitzLighterRed active:bg-blitzActiveRed"}>Pick Your Karategi</a>
                   </div>
                </div>
             </div>

@@ -20,7 +20,7 @@ export default function PreCheckout(){
             <div className="flex flex-col items-end w-1/2 mt-8 px-6 py-6">
                 <h1 className={bebasNeue.className + " text-4xl"}>Want to checkout as a Guest?</h1>
                 <div className="my-8">(We'll just need your email)</div>
-                <a href="/checkout" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline text-center align-middle w-1/2 h-14 leading-12"}>Checkout as a Guest</a>
+                <a href="/checkout" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline text-center align-middle w-1/2 h-14 leading-12 hover:bg-blitzLighterRed active:bg-blitzActiveRed"}>Checkout as a Guest</a>
             </div>
             <div className="flex flex-col items-start w-1/2 mt-8 px-6 py-6">
             <h1 className={bebasNeue.className + " text-4xl text-blitzBlue"}>JOIN BLITZ DOJO

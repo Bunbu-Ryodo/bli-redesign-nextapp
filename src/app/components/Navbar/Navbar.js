@@ -109,25 +109,25 @@ function Navbar(){
                         </div>
                         <div className="flex flex-col w-96 h-60 justify-end">
                             <h3 className={dosisSemibold.className + " text-blitzBlue"}>Total: £99.99 </h3>
-                            <button className={dosisSemibold.className + " bg-blitzRed text-white w-full p-4"}><a href="/precheckout">Go to Checkout</a></button>
+                            <button className={dosisSemibold.className + " bg-blitzRed text-white w-full p-4 hover:bg-blitzLighterRed active:bg-blitzActiveRed"}><a href="/precheckout">Go to Checkout</a></button>
                         </div>
                     </div>
                     <div className={!account ? "hidden" : " " + " absolute top-24 right-1 p-1 bg-white border border-blitzBlack"}>
                         <h3 className="text-blitzRed text-xl">Your Account</h3>
                         <div className="flex flex-col w-96 justify-start">
-                        <a href="#" className="text-xl">Order History</a>
-                        <a href="#" className="text-xl">Saved Quotes</a>
-                        <a href="#" className="text-xl">Payment Settings</a>
-                        <a href="#" className="text-xl">Your Details</a>
-                        <a href="/editcommunityprofile" className="text-xl">Edit Your Community Profile</a>
-                        <button className={dosisSemibold.className + " bg-blitzRed text-white w-full p-4"}>Login/Sign Up</button>
+                        <a href="#" className="text-xl hover:text-blitzBlue">Order History</a>
+                        <a href="#" className="text-xl hover:text-blitzBlue">Saved Quotes</a>
+                        <a href="#" className="text-xl hover:text-blitzBlue">Payment Settings</a>
+                        <a href="#" className="text-xl hover:text-blitzBlue">Your Details</a>
+                        <a href="/editcommunityprofile" className="text-xl hover:text-blitzBlue">Edit Your Community Profile</a>
+                        <button className={dosisSemibold.className + " bg-blitzRed text-white w-full p-4 hover:bg-blitzLighterRed active:bg-blitzActiveRed"}>Login/Sign Up</button>
                         </div>
                     </div>
                     <div className={!wishlist ? "hidden" : " " + " absolute top-24 right-1 p-1 bg-white border border-blitzBlack"}>
                         <h3 className="text-blitzRed text-xl">Your Wishlist</h3>
                         <div className="flex flex-col w-96 h-96 justify-end">
                             <h3 className={dosisSemibold.className + " text-blitzB"}></h3>
-                            <button className={dosisSemibold.className + " bg-blitzRed text-white w-full p-4"}>Add All Items to Cart</button>
+                            <button className={dosisSemibold.className + " bg-blitzRed text-white w-full p-4 hover:bg-blitzLighterRed active:bg-blitzActiveRed"}>Add All Items to Cart</button>
                         </div>
                     </div>
                 </div>

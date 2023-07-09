@@ -18,10 +18,10 @@ export default function Checkout(){
                 <h3 className={bebasNeue.className + " text-2xl text-blitzRed ml-1 mb-2"}>Your Cart</h3>
                 <div className="flex flex-row w-full">
                     <div className="flex flex-col items-start w-1/2 px-4 py-4">
-                        <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline text-center align-middle w-60 h-14 leading-12"}>Already a Member? Login</a>
+                        <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline text-center align-middle w-60 h-14 leading-12 hover:bg-blitzLighterRed active:bg-blitzActiveRed"}>Already a Member? Login</a>
                     </div>
                     <div className="flex flex-col items-end w-1/2 px-4 py-4">
-                        <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline text-center align-middle w-60 h-14 leading-12"}>Proceed to Payment</a>
+                        <a href="#" className={dosisSemibold.className + " p-1 px-1 text-white bg-blitzRed baseline text-center align-middle w-60 h-14 leading-12 hover:bg-blitzLighterRed active:bg-blitzActiveRed"}>Proceed to Payment</a>
                     </div>
                 </div>
                 <div className="flex flex-row ml-10 mt-10">

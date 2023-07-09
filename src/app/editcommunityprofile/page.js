@@ -31,6 +31,8 @@ export default function EditCommunityProfile(){
     const wisdom = useSelector((state) => state.profileReducer.value.wisdom);
     const experience = useSelector((state) => state.profileReducer.value.experience);
 
+    console.log(taiji);
+
     function selectTaiji(){
         dispatch(toggleTaijiTrue());
     }
@@ -53,17 +55,14 @@ export default function EditCommunityProfile(){
 
     function changeName(txt){
         dispatch(setName(txt));
-        console.log(name, "NAME");
     }
 
     function changeWisdom(txt){
         dispatch(setWisdom(txt));
-        console.log(wisdom, "WISDOM");
     }
 
     function changeExperience(txt){
         dispatch(setExperience(txt));
-        console.log(experience, "EXPERIENCE");
     }
 
     return(

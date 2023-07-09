@@ -13,11 +13,14 @@ module.exports = {
     extend: {
       colors: {
         blitzRed: '#74444A',
-        blitzLighterRed: 'rgba(116, 68, 74, 0.45)',
+        blitzLighterRed: 'rgba(116, 68, 74, 0.9)',
+        blitzActiveRed: 'rgba(116, 68, 74, 0.8)',
         blitzYellow: '#E4B777',
         blitzLighterYellow: 'rgba(228, 183, 119, 0.45)',
         blitzBlack: '#001011',
-        blitzBlue: '#20A4F3'
+        blitzBlue: '#20A4F3',
+        blitzLighterBlue: 'rgba(32, 164, 243, 0.9)',
+        blitzActiveBlue: 'rgba(32, 164, 243, 0.8)'
       },
       lineHeight: {
         '12': '3rem',
