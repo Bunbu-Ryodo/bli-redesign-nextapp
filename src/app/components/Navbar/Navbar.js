@@ -54,7 +54,7 @@ function Navbar(){
                             <a href="#" className="text-xl hover:text-blitzBlue">Boxing</a>
                             <a href="#" className="text-xl hover:text-blitzBlue">BJJ</a>
                             <a href="#" className="text-xl hover:text-blitzBlue">Judo</a>
-                            <a href="#" className="text-xl hover:text-blitzBlue">Karate</a>
+                            <a href="/karatedepartment" className="text-xl hover:text-blitzBlue">Karate</a>
                             <a href="#" className="text-xl hover:text-blitzBlue">Kali</a>
                             <a href="#" className="text-xl hover:text-blitzBlue">Jujitsu</a>
                             <a href="#" className="text-xl hover:text-blitzBlue">Kickboxing</a>

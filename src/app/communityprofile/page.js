@@ -1,6 +1,7 @@
 "use client";
 
 import Navbar from '../components/Navbar/Navbar';
+import ProductCard from '../components/ProductCard/ProductCard';
 import { bebasNeue, dosisSemibold } from '../fonts';
 import Image from 'next/image';
 import Taiji from './taiji.jpg';
@@ -9,6 +10,9 @@ import Katana from './katana.jpg';
 import Shine from './shine.jpg';
 import Makiwara from './makiwara.jpg';
 import Omedetou from './omedetou.jpg';
+import Diamond from './diamond.jpg';
+import Kokoro from './kokoro.jpg';
+import Zanshin from './zanshin.jpg';
 import { useSelector } from 'react-redux';
 
 export default function YourProfile(){
@@ -24,7 +28,7 @@ export default function YourProfile(){
     console.log(taiji, "TAIJI");
 
     return (
-        <div className="container mx-auto h-full w-full bg-blitzLighterYellow pb-10">
+        <div className="container mx-auto h-full w-full pb-10">
             <Navbar></Navbar>
             <h3 className={bebasNeue.className + " text-blitzRed text-4xl ml-1 mb-2"}>{name ? name : "Unknown" }</h3>
             <div className="container flex flex-row w-full">
@@ -68,11 +72,50 @@ export default function YourProfile(){
                     <h3 className={bebasNeue.className + " text-2xl text-blitzRed"}>{ name ? name + "'s Friends" : "Unknown's Friends"}</h3>
                 </div>
                 <div className="flex flex-col px-2">
-                    <span className="text-lg blitzRed">Master Ken <span className="text-blitzBlue">(Online)</span></span>
-                    <span className="text-lg blitzRed">Jesse Enkamp <span className="text-blitzBlack">(Last Online 1 month ago)</span></span>
-                    <span className="text-lg blitzRed">Sensei Seth <span className="text-blitzBlack">(Last Online 1 week ago)</span></span>
-                    <span className="text-lg blitzRed">Ramsey Dewey <span className="text-blitzBlue">(Online)</span></span>
+                    <span className="text-lg cursor-pointer text-blitzRed hover:text-blitzBlue">Master Ken (Online)</span>
+                    <span className="text-lg text-blitzBlack">Jesse Enkamp (Last Online 1 month ago)</span>
+                    <span className="text-lg text-blitzBlack">Sensei Set (Last Online 1 week ago)</span>
+                    <span className="text-lg cursor-pointer text-blitzRed hover:text-blitzBlue">Ramsey Dewey (Online)</span>
                 </div>
+            </div>
+            <div className="flex flex-row justify-start mt-10">
+                <div className="flex flex-row w-1/2 justify-end">
+                    <div className="flex flex-col items-end">
+                        <h3 className={bebasNeue.className + " text-2xl text-blitzBlue"}>Product Recommendations Based on Your Experience and Activity</h3>
+                        <span>(Only visible to you)</span>
+                    </div>
+                </div>
+                <div className="flex flex-col px-2">
+                </div>
+            </div>
+            <div className="container flex flex-row mt-2 justify-center max-[970px]:flex-col max-[970px]:items-center">
+                <ProductCard 
+                link="/diamondkata"
+                image={Diamond} 
+                alt="Diamond"
+                productDescription="Blitz Diamond Kata Karate Gi" 
+                price="£95.99-£115.99" 
+                rating="5/5" 
+                reviews="(75 Reviews)"
+                />
+                <ProductCard 
+                link="/kokoro"
+                image={Kokoro} 
+                alt="Kokoro"
+                productDescription="Blitz Kokoro Karate Gi - 10 oz" 
+                price="£71.99 - £91.99" 
+                rating="4/5" 
+                reviews="(1 Reviews)"
+                />
+                <ProductCard 
+                link="/zanshin"
+                image={Zanshin} 
+                alt="Zanshin"
+                productDescription="Blitz Zanshin Karate Gi - 12 oz" 
+                price="£83.99 - £103.99" 
+                rating="5/5" 
+                reviews="(13 Reviews)"
+                />
             </div>
             <div className="flex flex-row justify-center">
                 <button className={dosisSemibold.className + " p-4 mt-2 bg-blitzRed text-white hover:bg-blitzLighterRed active:bg-blitzActiveRed text-xl"}><a href="/editcommunityprofile">Edit Your Profile</a></button>
